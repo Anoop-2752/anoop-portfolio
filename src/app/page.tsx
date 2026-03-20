@@ -42,9 +42,9 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-lg text-gray-600"
+          className="text-2xl text-gray-600"
         >
-          Hey, I&apos;m anoopk 👋
+          <span className="font-bold">Hey, I&apos;m Anoop</span>  👋
         </motion.p>
 
         <motion.h1
@@ -53,7 +53,7 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-900"
         >
-          AI/ML Engineer | NLP Expert
+          AI/ML Engineer
         </motion.h1>
 
         <motion.div
