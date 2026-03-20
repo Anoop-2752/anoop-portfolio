@@ -6,7 +6,6 @@ export const projects = [
     tech: ["YOLOv8", "MediaPipe", "OpenCV", "Streamlit"],
     image: "/driver-safety.png",
     github: "https://github.com/Anoop-2752/Real-Time-Driver-Safety-System-ADAS-",
-    live: "https://your-demo-link.com",
   },
   {
     title: "Production RAG Pipeline",
@@ -15,7 +14,6 @@ export const projects = [
     tech: ["LangChain", "FAISS", "Groq", "RAGAS", "LangSmith"],
     image: "/rag-pipeline.png",
     github: "https://github.com/Anoop-2752/production-rag-pipeline",
-    live: "https://your-demo-link.com",
   },
   {
     title: "Quickkit",
@@ -23,7 +21,6 @@ export const projects = [
       "Free browser-based utility toolkit with 12+ tools for developers and everyday users. No signup, no backend.",
     tech: ["React", "Vite", "Tailwind CSS"],
     image: "/quickkit.png",
-    github: "https://github.com/YOUR_USERNAME/quickkit",
     live: "https://quickkit.dev",
   },
   {
@@ -33,6 +30,5 @@ export const projects = [
     tech: ["LangGraph", "Groq", "Tavily"],
     image: "/multi-agent.png",
     github: "https://github.com/Anoop-2752/multi-agent-research",
-    live: "https://your-demo-link.com",
   },
 ];

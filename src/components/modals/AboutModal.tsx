@@ -17,7 +17,7 @@ export default function AboutModal({ onClose }: { onClose: () => void }) {
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.9, y: 30 }}
         transition={{ type: "spring", duration: 0.5 }}
-        className="bg-white rounded-2xl shadow-xl max-w-lg w-full p-8 relative"
+        className="bg-white rounded-2xl shadow-xl max-w-2xl w-full p-8 relative"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -37,40 +37,29 @@ export default function AboutModal({ onClose }: { onClose: () => void }) {
         <div className="space-y-4 text-gray-600 leading-relaxed">
           <p>
             I&apos;m{" "}
-            <span className="text-gray-900 font-medium">Anoop K</span>, an
-            AI/ML Engineer based in Kerala, India. I specialize in building
+            <span className="text-gray-900 font-medium">Anoop</span>, an
+            AI/ML Engineer based in Bangalore, India. I specialize in building
             intelligent systems — from computer vision pipelines and NLP
-            solutions to production-ready GenAI applications.
+            solutions to production-ready GenAI applications. My work sits at
+            the intersection of research and real-world deployment.
           </p>
           <p>
-            My journey into AI wasn&apos;t linear. After working in accounting
-            and operations internationally, I made a deliberate pivot into AI
-            engineering in 2024. That non-traditional path gives me a unique edge
-            — I don&apos;t just build models, I understand the business problems
-            they solve.
+            My focus is on turning complex AI research into real, working
+            products. I work across the full stack of modern AI — training
+            models, building RAG pipelines, designing multi-agent systems, and
+            shipping tools that people actually use. I care deeply about
+            evaluation, observability, and making AI systems that are reliable,
+            not just impressive in demos.
           </p>
           <p>
-            I&apos;ve worked on real-time driver safety systems using YOLOv8 and
-            MediaPipe, built production RAG pipelines, and shipped developer
-            tools used by real people. I believe in learning by building — every
-            project in my portfolio is deployed and functional.
+            I believe in learning by building. Every project in my portfolio is
+            deployed and functional — from real-time driver safety systems using
+            YOLOv8 and MediaPipe, to production RAG pipelines with full
+            observability built in. If I find an interesting problem, I build a
+            solution for it. That&apos;s how I learn, and that&apos;s how I grow.
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-4 mt-6 pt-6 border-t border-gray-100">
-          <div className="text-center">
-            <p className="text-2xl font-bold text-gray-900">4+</p>
-            <p className="text-xs text-gray-500 mt-1">Projects shipped</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl font-bold text-gray-900">8mo</p>
-            <p className="text-xs text-gray-500 mt-1">AI internship</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl font-bold text-gray-900">10+</p>
-            <p className="text-xs text-gray-500 mt-1">Tech skills</p>
-          </div>
-        </div>
       </motion.div>
     </motion.div>
   );

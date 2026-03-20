@@ -37,7 +37,7 @@ export default function ContactModal({ onClose }: { onClose: () => void }) {
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.9, y: 30 }}
         transition={{ type: "spring", duration: 0.5 }}
-        className="bg-white rounded-2xl shadow-xl max-w-lg w-full p-8 relative max-h-[85vh] overflow-y-auto"
+        className="bg-white rounded-2xl shadow-xl max-w-2xl w-full p-8 relative max-h-[85vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <button

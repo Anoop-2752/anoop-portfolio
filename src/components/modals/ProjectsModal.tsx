@@ -18,7 +18,7 @@ export default function ProjectsModal({ onClose }: { onClose: () => void }) {
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.9, y: 30 }}
         transition={{ type: "spring", duration: 0.5 }}
-        className="bg-white rounded-2xl shadow-xl max-w-2xl w-full p-8 relative max-h-[85vh] overflow-y-auto"
+        className="bg-white rounded-2xl shadow-xl max-w-3xl w-full p-8 relative max-h-[85vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -35,7 +35,7 @@ export default function ProjectsModal({ onClose }: { onClose: () => void }) {
           <h2 className="text-xl font-bold text-gray-900">Projects</h2>
         </div>
 
-        <div className="space-y-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -62,12 +62,16 @@ export default function ProjectsModal({ onClose }: { onClose: () => void }) {
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-semibold text-gray-900">{project.title}</h3>
                   <div className="flex items-center gap-2">
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-1.5 rounded-lg hover:bg-gray-100 transition-colors">
-                      <Github className="w-4 h-4 text-gray-500" />
-                    </a>
-                    <a href={project.live} target="_blank" rel="noopener noreferrer" className="p-1.5 rounded-lg hover:bg-gray-100 transition-colors">
-                      <ExternalLink className="w-4 h-4 text-gray-500" />
-                    </a>
+                    {"github" in project && (
+                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-1.5 rounded-lg hover:bg-gray-100 transition-colors">
+                        <Github className="w-4 h-4 text-gray-500" />
+                      </a>
+                    )}
+                    {"live" in project && (
+                      <a href={project.live} target="_blank" rel="noopener noreferrer" className="p-1.5 rounded-lg hover:bg-gray-100 transition-colors">
+                        <ExternalLink className="w-4 h-4 text-gray-500" />
+                      </a>
+                    )}
                   </div>
                 </div>
                 <p className="text-sm text-gray-500 mb-3">{project.description}</p>
