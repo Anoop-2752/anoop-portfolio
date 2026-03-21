@@ -8,7 +8,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Anoop K | AI/ML Engineer",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+  title: "Anoop | AI/ML Engineer",
   description: "AI/ML Engineer based in Bangalore, India. Building intelligent systems — Computer Vision, NLP, RAG pipelines, and production-ready GenAI applications.",
   openGraph: {
     title: "Anoop K — AI/ML Engineer",
