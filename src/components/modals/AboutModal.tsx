@@ -7,7 +7,7 @@ import { useState } from "react";
 const tabs = [
   { id: "about", label: "About" },
   { id: "experience", label: "Experience" },
-  { id: "education", label: "Education & Certs" },
+  { id: "education", label: "Education & Certification" },
 ];
 
 const experience = [
