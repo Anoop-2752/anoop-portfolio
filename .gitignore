@@ -33,6 +33,9 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# favicon source folders
+src/app/favicon_io*
+
 # vercel
 .vercel
 
