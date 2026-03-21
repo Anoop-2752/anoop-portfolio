@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Anoop K — AI/ML Engineer",
     description: "Building intelligent systems — Computer Vision, NLP, RAG pipelines, and production-ready GenAI applications.",
-    url: "https://anoopk.vercel.app",
+    url: "https://anoop-portfolio-7w1u.vercel.app",
     siteName: "Anoop K Portfolio",
     images: [
       {
