@@ -37,7 +37,7 @@ export default function Home() {
       </div>
 
       {/* Hero content */}
-      <div className="relative z-10 flex flex-col items-center gap-6 px-4">
+      <div className="relative z-10 flex flex-col items-center gap-6 px-4 pb-8 sm:pb-0">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-900"
+          className="text-3xl md:text-4xl lg:text-6xl font-bold text-center text-gray-900"
         >
           AI/ML Engineer
         </motion.h1>
@@ -69,7 +69,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="flex flex-wrap justify-center gap-3 mt-8"
+          className="grid grid-cols-3 sm:flex sm:flex-wrap justify-center gap-3 mt-8"
         >
           {navItems.map((item) => (
             <motion.button
