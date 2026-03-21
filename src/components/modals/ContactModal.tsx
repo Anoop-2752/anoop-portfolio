@@ -133,6 +133,8 @@ export default function ContactModal({ onClose }: { onClose: () => void }) {
         >
           <input
             type="text"
+            name="from_name"
+            id="from_name"
             placeholder="Your name"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -141,6 +143,8 @@ export default function ContactModal({ onClose }: { onClose: () => void }) {
           />
           <input
             type="email"
+            name="from_email"
+            id="from_email"
             placeholder="Your email"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -148,6 +152,8 @@ export default function ContactModal({ onClose }: { onClose: () => void }) {
             className="w-full px-4 py-2.5 text-sm bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-400 transition-all"
           />
           <textarea
+            name="message"
+            id="message"
             placeholder="Your message"
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
