@@ -33,7 +33,8 @@ export default function ContactModal({ onClose }: { onClose: () => void }) {
       setStatus("sent");
       setFormData({ name: "", email: "", message: "" });
       setTimeout(() => setStatus("idle"), 4000);
-    } catch {
+    } catch (err) {
+      console.error("EmailJS error:", err);
       setStatus("error");
       setTimeout(() => setStatus("idle"), 4000);
     }
