@@ -13,7 +13,7 @@ const tabs = [
 const experience = [
   {
     role: "AI/ML Engineer Intern",
-    company: "Tech Company",
+    company: "Rubixe AI",
     duration: "Jan 2024 – Aug 2024 · 8 months",
     location: "Bangalore, India",
     bullets: [
@@ -243,7 +243,7 @@ export default function AboutModal({ onClose }: { onClose: () => void }) {
                     <div>
                       <h4 className="font-semibold text-gray-900">{edu.degree}</h4>
                       <p className="text-sm text-purple-600 font-medium">{edu.institution}</p>
-                      <p className="text-xs text-gray-400 mt-0.5">{edu.field} · {edu.year}</p>
+                      <p className="text-xs text-gray-400 mt-0.5">{edu.field}</p>
                     </div>
                   </motion.div>
                 ))}
